@@ -9,10 +9,10 @@ np_weight_kg = np.array(weight_lb) * 0.453592
 bmi = np_weight_kg / np_height_m ** 2
 
 # Create the light array
-light = [bmi > 30]
+light = bmi < 21
 
 # Print out light
-# which the elements are True if the corresponding player's BMI is over 30.
+
 print(light)
 # Print out BMIs of all baseball players whose BMI is below 21
 print(bmi[light])
